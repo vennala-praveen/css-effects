@@ -68,6 +68,24 @@
             return total+value;
         }
         document.getElementById("demo").innerHTML = num4;
+
+        
+
+        var student = {
+            name: "Tony",
+            age: 45,
+            studies: "ECE",
+        };
+        document.getElementById("demo").innerHTML = student.name + "of the age " + student.age + "studies" + student.studies;
+
+        function stud(name,age,studies){
+            this.name = name;
+            this.age = age;
+            this.studies = studies;
+        }
+        var student = stud("Tony Stark", 45, "ECE");
+        document.getElementById("demo").innerHTML = student.name + "of the age " + student.age + "studies" + student.studies;
+
     </script>
 </body>
 </html>
